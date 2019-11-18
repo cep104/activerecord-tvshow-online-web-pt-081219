@@ -8,5 +8,4 @@ class Show < ActiveRecord::Base
     self.order(:rating desc).first
   end
    
-
 end
