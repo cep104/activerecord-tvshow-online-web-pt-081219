@@ -6,6 +6,6 @@ class Show < ActiveRecord::Base
   
   def self.most_popular_show
   new = self.highest_rating
-   
+   new
   end
 end
