@@ -5,6 +5,7 @@ class Show < ActiveRecord::Base
   end
   
   def self.most_popular_show
-    self.maximum(:rating).name
+   new = self.maximum(:rating)
+   new.name
   end
 end
